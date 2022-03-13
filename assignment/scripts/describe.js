@@ -26,9 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// We declare a variable called 'name' with the string value of 'Dane'.
+// We check if the value of 'name' is 'Mary'.
+// Because the value of 'name' is 'Dane' (not 'Mary'), we console log the string 'How do you do?'. 
 //
 
 //CODE
@@ -45,10 +45,13 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We declare an undefined variable called 'secret'.
+// We declare a variable called 'code' with the integer value of '123'.
+// We check to see if the value of 'code' is '123'. Because it is, we set the 'secret' variable to the string value of 'super'
+// and we multiply the 'code' variable by 2.
+// We check to see if the value of 'code' is greater than '250'. Because we multiplied 'code' by two in the last block, 'code' is now 
+// equal to '246'. Since this is less than '250', we skip this block of code.
+// We then console log the 'secret' variable which outputs the string 'super' to the console.
 
 //CODE
 /*
@@ -70,10 +73,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We declare the variable 'isStudent' with the boolean value of 'true'.
+// We declare the variable 'age' with the integer value of '34'.
+// We declare the variable 'zip' with the integer value of '55407'.
+// We check to see if value of 'isStudent' is 'true' and if the value of 'zip' is greater than '80000'. If those conditions aren't
+// met, we check to see if the value of 'isStudent' is 'false' or if 'age' is less than '30'. If those conditions aren't met,
+// we check to see if the value of 'isStudent' is 'true'. If that condition isn't met, we console log the string 'How about the weather?'.
+// Because 'isStudent' is 'true' and 'age' is greater than '30', we console log the string 'Welcome to Prime!'.
 
 //CODE
 /*
@@ -130,11 +136,15 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+//FIX - The values of 'colorOne' and 'colorTwo' are reversed. 
+// Should be - let colorOne = 'blue'; colorTwo = 'red'
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+  //FIX - Only colorOne is being set to 'purple'.
+  // Should include - colorTwo = 'purple';
   colorOne = 'purple';
 }
 */
@@ -147,6 +157,8 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+//FIX - This conditional is checking if temp is higher than 39 OR time is greater or equal to 4.
+// Should be - if (temp > 39 && time >= 4)
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -160,6 +172,10 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+//FIX - This conditional is checking to see if 'minAge' is LESS or equal to 'age'. This technically works, but it lacks logical clearity.
+// More clear - if (age >= minAge)
+//FIX - The if and else code blocks are reversed for this conditional.
+// Should be - {console.log('enter');} else {console.log('no entry');}
 if(minAge <= age) {
   console.log('no entry');
 } else {
